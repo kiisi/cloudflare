@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme {
+  --color-primary: #1c1f77;
+
+  --font-primary: Inter, sans-serif;
+}
+
+
+@utility container {
+  @apply w-[90%] max-w-[1400px] mx-auto;
+}
+
+@keyframes dynamicTitleSlideUp {
+  from {
+        visibility: hidden;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        visibility: visible;
+        max-height: 100%;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
